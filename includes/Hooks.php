@@ -19,6 +19,8 @@ class Hooks {
 	}
 
 	public static function getLanguageSelectorBoxHtml() {
+		global $wgSimpleLangageSelectionLangList, $wgScriptPath;
+
 		$ret = "\n";
 
 		$ret .= '<div id="sls-language-selection-modal" class="modal fade" role="dialog">
@@ -32,21 +34,20 @@ class Hooks {
 		      </div>
 		      <div class="modal-body">';
 
-		$languages = [
-				'fr' => 'Francais',
-				'en' => 'English',
-				'es' => 'Español',
-				'it' => 'Italiano'
-		];
 
-		$ret .= "\n<ul>\n";
-		foreach ($languages as $code => $languageName) {
-			$ret .= '<li class="sls-changeLanguageLink" data-code="'.$code.'"><a>'.$languageName.'</a></li>';
+
+		$ret .= "\n<ul class='sls-language-list row'>\n";
+		foreach ($wgSimpleLangageSelectionLangList as $code) {
+			$languageName = ucfirst(Language::fetchLanguageName( $code ));
+			$ret .= '<li class="col-md-6 col-xs-12 sls-changeLanguageLink sls-lang-link sls-lang-link-'.$code.'" data-code="'.$code.'"><a>'.
+						'<img class="sls-flagimage" src="'.$wgScriptPath.'/extensions/SimpleLanguageSelector/resources/flags/'.$code.'.png" alt = '.$code.'/>
+						'.$languageName.'</a>'.
+					'</li>';
 		}
 		$ret .= "\n</ul>\n";
 
 		$ret .= '
-			        <p>'.wfMessage('sls-select-other-languages-info', '<a href="#">' . wfMessage('sls-select-other-languages-tradlink') . '</a>')->plain() .'</p>
+			        <p class="sls-messageInfo">'.wfMessage('sls-select-other-languages-info', '<a href="#">' . wfMessage('sls-select-other-languages-tradlink') . '</a>')->plain() .'</p>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">'.wfMessage('cancel')->plain().'</button>
@@ -63,14 +64,17 @@ class Hooks {
 	 * Hook: PersonalUrls
 	 */
 	public static function addPersonalBarTrigger( array &$personal_urls, &$title ) {
-
+		global $wgScriptPath;
 
 		$context = RequestContext::getMain();
-
 		// The element id will be 'pt-uls'
 		$langCode = $context->getLanguage()->getCode();
+
+		$html = '<li id="pt-language" class="active"><a href="#" class="sls-trigger lang-'.$langCode.'"><img class="sls-flagimage" title="'.Language::fetchLanguageName( $langCode ).'" src="'.$wgScriptPath.'/extensions/SimpleLanguageSelector/resources/flags/'.$langCode.'.png" alt = '.$langCode.'/></a></li>';
+
 		$personal_urls = [
 				'language' => [
+						'html' => $html,//Language::fetchLanguageName( $langCode ),
 						'text' => Language::fetchLanguageName( $langCode ),
 						'href' => '#',
 						'class' => 'sls-trigger lang-' . $langCode,

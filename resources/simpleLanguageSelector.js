@@ -15,17 +15,11 @@
 		function changeLanguageAnon(language) {
 			mw.cookie.set( 'language', language );
 
-			
+			/*
 			var options = {};
 			options.prefix = 'wikifab_i18n_wfpp_';
-			mw.cookie.set( 'language', language , options);
-			
-			console.log(wgCookiePrefix);
-			console.log('cookies set ' + language);
-			console.log('cookies set ' + language);
-			console.log(mw.cookie.get( 'language'));
-			console.log(mw.cookie.get( 'language', 'wikifab_local_wfpp_'));
-			console.log(mw.cookie.get( 'language', 'wikifab_i18n_wfpp_'));
+			mw.cookie.set( 'language', language , options);*/
+
 			location.reload();
 		}
 
@@ -56,7 +50,6 @@
 	
 	$(document).ready(function() {
 		$('.sls-changeLanguageLink').click(function() {
-			console.log('change Lang : ' + ($(this).data( "code" )));
 			mw.sls.changeLanguage(($(this).data( "code" )));
 		});
 		

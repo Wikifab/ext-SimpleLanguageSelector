@@ -19,7 +19,11 @@
 	"AutoloadClasses": {
 		"SimpleLanguageSelector\\Hooks": "includes/Hooks.php"
 	},
-	"config": {},
+	"config": {
+		"wgSimpleLangageSelectionLangList": [
+			"fr","en","de","sp"
+		]
+	},
 	"ResourceModules": {
 		"ext.simplelanguageselector": {
 			"scripts": [
