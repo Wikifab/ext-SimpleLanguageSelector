@@ -1,0 +1,38 @@
+{
+	"name": "SimpleLanguageSelector",
+	"version": "1.0.0",
+	"author": [
+		"Pierre Boutet"
+	],
+	"url": "",
+	"descriptionmsg": "sls-desc",
+	"license-name": "MIT",
+	"Hooks": {
+		"BeforePageDisplay": "SimpleLanguageSelector\\Hooks::addModules",
+		"PersonalUrls": "SimpleLanguageSelector\\Hooks::addPersonalBarTrigger"
+	},
+	"MessagesDirs": {
+		"SimplelLanguageSelector": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SimpleLanguageSelector\\Hooks": "includes/Hooks.php"
+	},
+	"config": {},
+	"ResourceModules": {
+		"ext.simplelanguageselector": {
+			"scripts": [
+				"simpleLanguageSelector.js"
+			],
+			"styles": "simpleLanguageSelector.css",
+			"localBasePath": "resources",
+			"remoteExtPath": "SimpleLanguageSelector/resources",
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-windows"
+			]
+		}
+	},
+	"manifest_version": 1
+}
