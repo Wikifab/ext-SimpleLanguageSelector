@@ -5,6 +5,8 @@ SimpleLanguageSelector is a mediawiki extension add an icone with a language cho
 
 To be used with Translate extension.
 
+This use Flags to select Languages. Note that this is not a good way to select languages (flags represents countries, not languages) But you may still want to use flags...
+
 
 ## Installation
 
