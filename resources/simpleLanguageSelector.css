@@ -20,6 +20,7 @@ li.sls-changeLanguageLink a {
 }
 li.sls-changeLanguageLink a:hover {
 	background-color:#EEEEEE;
+	cursor: pointer;
 	text-decoration:none;
 }
 
@@ -28,10 +29,12 @@ li.sls-changeLanguageLink a:hover {
 }
 #pt-language .sls-trigger {
 	display:inline-block;
-	width:2em;
+	width:30px;
 	text-indent: 100%;
+	margin-top:8px;
   	white-space: nowrap;
   	overflow: hidden;
+    background-repeat: no-repeat;
 	background-size: contain
 }
 #pt-language .sls-trigger.lang-en {
