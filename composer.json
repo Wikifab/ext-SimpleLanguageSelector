@@ -1,5 +1,5 @@
 {
-    "name": "wikifab/simplelanguageselector",
+    "name": "wikifab/simpleLanguageSelector",
     "description": "Mediawiki extension to automatically set page language at page creation with current user language.",
     "type": "mediawiki-extension",
     "require": {
