@@ -11,7 +11,6 @@ li.sls-changeLanguageLink {
 	float:left;
 }
 li.sls-changeLanguageLink a {
-	color:#00000;
 	padding:1em 2em;
 	display:inline-block;
 	-webkit-border-radius: 5px;
@@ -27,15 +26,19 @@ li.sls-changeLanguageLink a:hover {
 .sls-messageInfo {
 	clear:both;
 }
+
 #pt-language .sls-trigger {
 	display:inline-block;
-	width:30px;
+	width:24px;
 	text-indent: 100%;
-	margin-top:8px;
+	margin-top:10px;
   	white-space: nowrap;
   	overflow: hidden;
     background-repeat: no-repeat;
-	background-size: contain
+	background-size: contain;
+	background-color: transparent;
+    margin-right: 8px;
+    margin-left: 8px;
 }
 #pt-language .sls-trigger.lang-en {
 	background-image: url('flags/en.png')
