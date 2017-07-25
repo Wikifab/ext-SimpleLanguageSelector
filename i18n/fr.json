@@ -5,5 +5,6 @@
         ]
     },
 	"sls-select-language": "Sélectionnez une langue",
-	"sls-select-other-languages-info" : "Pour traduire Wikifab dans d'autre langue, aller sur $1"
+	"sls-select-other-languages-info" : "Pour participer à la traduction de Wikifab dans d'autres langues, rendez-vous sur $1",
+	"sls-select-other-languages-tradlink" : "http://translate.wikifab.org/"
 }

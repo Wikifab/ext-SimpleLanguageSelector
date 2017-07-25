@@ -47,7 +47,7 @@ class Hooks {
 		$ret .= "\n</ul>\n";
 
 		$ret .= '
-			        <p class="sls-messageInfo">'.wfMessage('sls-select-other-languages-info', '<a href="#">' . wfMessage('sls-select-other-languages-tradlink') . '</a>')->plain() .'</p>
+			        <p class="sls-messageInfo">'.wfMessage('sls-select-other-languages-info', '<a href=" ' . wfMessage('sls-select-other-languages-tradlink') . ' " target="_blank">' . wfMessage('sls-select-other-languages-tradlink') . '</a>')->plain() .'</p>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">'.wfMessage('cancel')->plain().'</button>
