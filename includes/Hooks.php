@@ -15,6 +15,12 @@ class Hooks {
 	public static function addModules( $out, $skin ) {
 		$out->addModules( 'ext.simplelanguageselector' );
 
+		$out->addModuleStyles(
+				array(
+						'ext.simplelanguageselectorcss'
+				)
+		);
+
 		$out->addHTML(self::getLanguageSelectorBoxHtml());
 	}
 

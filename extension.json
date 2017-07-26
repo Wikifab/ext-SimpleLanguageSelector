@@ -25,16 +25,27 @@
 		]
 	},
 	"ResourceModules": {
-		"ext.simplelanguageselector": {
+		"ext.simplelanguageselectorjs": {
 			"scripts": [
 				"simpleLanguageSelector.js"
 			],
-			"styles": "simpleLanguageSelector.css",
 			"localBasePath": "resources",
 			"remoteExtPath": "SimpleLanguageSelector/resources",
 			"dependencies": [
 				"oojs-ui-core",
 				"oojs-ui-windows"
+			]
+		},
+		"ext.simplelanguageselectorcss": {
+			"styles": "simpleLanguageSelector.css",
+			"localBasePath": "resources",
+			"remoteExtPath": "SimpleLanguageSelector/resources",
+			"position": "top"
+		},
+		"ext.simplelanguageselector": {
+			"dependencies": [
+				"ext.simplelanguageselectorcss",
+				"ext.simplelanguageselectorjs"
 			]
 		}
 	},

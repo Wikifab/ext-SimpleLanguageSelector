@@ -41,20 +41,26 @@ li.sls-changeLanguageLink a:hover {
     margin-left: 8px;
 }
 #pt-language .sls-trigger.lang-en {
+	/* @embed */
 	background-image: url('flags/en.png')
 }
 #pt-language .sls-trigger.lang-fr {
+	/* @embed */
 	background-image: url('flags/fr.png')
 }
 #pt-language .sls-trigger.lang-it {
+	/* @embed */
 	background-image: url('flags/it.png')
 }
 #pt-language .sls-trigger.lang-de {
+	/* @embed */
 	background-image: url('flags/de.png')
 }
 #pt-language .sls-trigger.lang-sv {
+	/* @embed */
 	background-image: url('flags/sv.png')
 }
 #pt-language .sls-trigger.lang-es {
+	/* @embed */
 	background-image: url('flags/es.png')
 }
