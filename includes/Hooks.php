@@ -52,10 +52,11 @@ class Hooks {
 		}
 		$ret .= "\n</ul>\n";
 
-		$url = wfMessage('sls-select-other-languages-tradlink');
+		$url = 'http://translate.wikifab.org';
 		$ret .= '
-			        <p class="sls-messageInfo">
-			        	'.wfMessage('sls-select-other-languages-info', '<a href="' . $url . '" target="_blank">' . $url . '</a>')->plain() .'</p>
+			        <p class="sls-messageInfo">'.
+			        	wfMessage('sls-select-other-languages-info', '<a href="' . $url . '" target="_blank">' . $url . '</a>')->plain()
+			        .'</p>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">'.wfMessage('cancel')->plain().'</button>

@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Pierre Boutet"
+        ]
+    },
+	"sls-select-language": "Select a language",
+	"sls-select-other-languages-info" : "To participate in the translation of Wikifab, go to $1."
+}
