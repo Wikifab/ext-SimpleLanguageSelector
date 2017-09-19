@@ -28,17 +28,19 @@ li.sls-changeLanguageLink a:hover {
 }
 
 #pt-language .sls-trigger {
-	display:inline-block;
-	width:24px;
-	text-indent: 100%;
-	margin-top:10px;
-  	white-space: nowrap;
-  	overflow: hidden;
+	display: inline-block;
+    width: 24px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-repeat: no-repeat;
-	background-size: contain;
-	background-color: transparent;
-    margin-right: 8px;
-    margin-left: 8px;
+    background-size: 24px;
+    background-color: transparent;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-position: center 18px;
+    padding: 15px 21px !important;
+    margin-top: 0px;
 }
 #pt-language .sls-trigger.lang-en {
 	/* @embed */
