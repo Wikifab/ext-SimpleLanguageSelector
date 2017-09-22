@@ -39,7 +39,7 @@ li.sls-changeLanguageLink a:hover {
     margin-right: 0px;
     margin-left: 0px;
     background-position: center 18px;
-    padding: 15px 21px !important;
+    padding: 15px 0px 15px 42px !important;
     margin-top: 0px;
 }
 #pt-language .sls-trigger.lang-en {
