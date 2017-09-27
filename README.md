@@ -5,14 +5,14 @@ SimpleLanguageSelector is a mediawiki extension add an icone with a language cho
 
 To be used with Translate extension.
 
-This use Flags to select Languages. Note that this is not a good way to select languages (flags represents countries, not languages) But you may still want to use flags...
+This uses Flags to select Languages. Note that this is not a good way to select languages (flags represents countries, not languages) But you may still want to use flags...
 
 
 ## Installation
 
 It requires wikifab chameleon skin.
 
-Extract extension ant place it in the 'extensions' directory of your installation. (the directory namme must be 'SimpleLanguageSelector')
+Extract extension and place it in the 'extensions' directory of your installation. (the directory namme must be 'SimpleLanguageSelector')
 
 Load extension and enable setting page Language in DB in file LocalSetting.php, et configure UniversalLanguageExtension to be enable, and not displayd : 
 
