@@ -43,9 +43,17 @@ li.sls-changeLanguageLink a:hover {
     margin-top: 0px;
     color:transparent;
 }
+#pt-language .sls-trigger.lang-de {
+	/* @embed */
+	background-image: url('flags/de.png')
+}
 #pt-language .sls-trigger.lang-en {
 	/* @embed */
 	background-image: url('flags/en.png')
+}
+#pt-language .sls-trigger.lang-es {
+	/* @embed */
+	background-image: url('flags/es.png')
 }
 #pt-language .sls-trigger.lang-fr {
 	/* @embed */
@@ -55,15 +63,11 @@ li.sls-changeLanguageLink a:hover {
 	/* @embed */
 	background-image: url('flags/it.png')
 }
-#pt-language .sls-trigger.lang-de {
+#pt-language .sls-trigger.lang-pt {
 	/* @embed */
-	background-image: url('flags/de.png')
+	background-image: url('flags/pt.png')
 }
 #pt-language .sls-trigger.lang-sv {
 	/* @embed */
 	background-image: url('flags/sv.png')
-}
-#pt-language .sls-trigger.lang-es {
-	/* @embed */
-	background-image: url('flags/es.png')
 }

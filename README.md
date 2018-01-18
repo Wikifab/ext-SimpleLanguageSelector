@@ -27,3 +27,21 @@ Set the languages to use with $wgSimpleLangageSelectionLangList:
 ```
 $wgSimpleLangageSelectionLangList = ['fr', 'en', 'es'];
 ```
+
+availables lang : 
+* de
+* en
+* es
+* fr
+* it
+* pt
+* sv
+
+## How to add an available lang :
+
+* add flag png to flags dir (use one from flags/countries)
+* add css : (example for FR )
+ #pt-language .sls-trigger.lang-fr {
+ 	/* @embed */
+ 	background-image: url('flags/fr.png')
+ }
