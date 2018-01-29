@@ -25,7 +25,8 @@ class Hooks {
 	}
 
 	public static function getLanguageSelectorBoxHtml() {
-		global $wgSimpleLangageSelectionLangList, $wgScriptPath;
+		global $wgSimpleLangageSelectionLangList, $wgScriptPath, $wgSimpleLangageSelectionShowTranslateLink;
+
 
 		$ret = "\n";
 
@@ -52,11 +53,16 @@ class Hooks {
 		}
 		$ret .= "\n</ul>\n";
 
-		$url = 'http://translate.wikifab.org';
+		if ($wgSimpleLangageSelectionShowTranslateLink) {
+			$url = 'http://translate.wikifab.org';
+			$ret .= '
+			        <p class="sls-messageInfo">'
+			        . wfMessage('sls-select-other-languages-info', '<a href="' . $url . '" target="_blank">' . $url . '</a>')->plain()
+			        . '</p>
+			';
+		}
+
 		$ret .= '
-			        <p class="sls-messageInfo">'.
-			        	wfMessage('sls-select-other-languages-info', '<a href="' . $url . '" target="_blank">' . $url . '</a>')->plain()
-			        .'</p>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">'.wfMessage('cancel')->plain().'</button>

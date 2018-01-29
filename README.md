@@ -37,6 +37,11 @@ availables lang :
 * pt
 * sv
 
+To add link to translate wikifab, add this config in LocalSettings.php :
+```
+$wgSimpleLangageSelectionShowTranslateLink = true;
+```
+
 ## How to add an available lang :
 
 * add flag png to flags dir (use one from flags/countries)

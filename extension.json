@@ -22,7 +22,8 @@
 	"config": {
 		"wgSimpleLangageSelectionLangList": [
 			"fr","en","de","sp"
-		]
+		],
+		"wgSimpleLangageSelectionShowTranslateLink" : false
 	},
 	"ResourceModules": {
 		"ext.simplelanguageselectorjs": {
