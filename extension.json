@@ -9,7 +9,8 @@
 	"license-name": "MIT",
 	"Hooks": {
 		"BeforePageDisplay": "SimpleLanguageSelector\\Hooks::addModules",
-		"PersonalUrls": "SimpleLanguageSelector\\Hooks::addPersonalBarTrigger"
+		"PersonalUrls": "SimpleLanguageSelector\\Hooks::addPersonalBarTrigger",
+		"UserGetLanguageObject": "SimpleLanguageSelector\\Hooks::onUserGetLanguageObject"
 	},
 	"MessagesDirs": {
 		"SimplelLanguageSelector": [

@@ -101,4 +101,11 @@ class Hooks {
 		return true;
 	}
 
+	public static function onUserGetLanguageObject($user, &$code){
+		global $wgSimpleLangageSelectionLangList;
+		if(!in_array($code, $wgSimpleLangageSelectionLangList)){
+			$code = 'en';
+		}
+	}
+
 }
