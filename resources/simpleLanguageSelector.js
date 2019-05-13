@@ -4,8 +4,6 @@
 	
 	mw.sls = mw.sls || {};
 
-	var wgSimpleLangageSelectionLangList = mw.config.get('wgSimpleLangageSelectionLangList');
-
 	/**
 	 * Change the language of wiki using API or set cookie and reload the page
 	 *
@@ -51,19 +49,7 @@
 	};
 	
 	$(document).ready(function() {
-		var userLanguage = $('.sls-trigger').attr('class').split('lang-')[1];
-		if(!wgSimpleLangageSelectionLangList.includes(userLanguage)){
-			var modalLanguage = $('#sls-language-selection-modal');
-			modalLanguage.find('.close').attr('disabled', true);
-			modalLanguage.find('#cancel').attr('disabled', true);
-			modalLanguage.modal();
-		}
 		$('.sls-changeLanguageLink').click(function() {
-			var modalLanguage = $('#sls-language-selection-modal');
-			if(modalLanguage.find('.close').attr('disabled')) {
-				modalLanguage.find('.close').attr('disabled', false);
-				modalLanguage.find('#cancel').attr('disabled', false);
-			}
 			mw.sls.changeLanguage(($(this).data( "code" )));
 		});
 		

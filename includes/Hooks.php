@@ -7,18 +7,6 @@ use RequestContext;
 class Hooks {
 
 	/**
-	 * Makes global variables accessible via JS client
-	 * @param $vars
-	 * @return bool
-	 */
-	public static function onResourceLoaderGetConfigVars(&$vars){
-		global $wgSimpleLangageSelectionLangList;
-
-		$vars['wgSimpleLangageSelectionLangList'] = $wgSimpleLangageSelectionLangList;
-		return true;
-	}
-
-	/**
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 * @return bool
@@ -111,6 +99,13 @@ class Hooks {
 		] + $personal_urls;
 
 		return true;
+	}
+
+	public static function onUserGetLanguageObject($user, &$code){
+		global $wgSimpleLangageSelectionLangList;
+		if(!in_array($code, $wgSimpleLangageSelectionLangList)){
+			$code = 'en';
+		}
 	}
 
 }
