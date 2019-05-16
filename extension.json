@@ -10,7 +10,7 @@
 	"Hooks": {
 		"BeforePageDisplay": "SimpleLanguageSelector\\Hooks::addModules",
 		"PersonalUrls": "SimpleLanguageSelector\\Hooks::addPersonalBarTrigger",
-		"ResourceLoaderGetConfigVars": "SimpleLanguageSelector\\Hooks::onResourceLoaderGetConfigVars"
+		"UserGetLanguageObject": "SimpleLanguageSelector\\Hooks::onUserGetLanguageObject"
 	},
 	"MessagesDirs": {
 		"SimplelLanguageSelector": [
