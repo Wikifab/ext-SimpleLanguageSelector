@@ -65,7 +65,7 @@ class Hooks {
 		$ret .= '
 			      </div>
 			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" id="cancel" data-dismiss="modal">'.wfMessage('cancel')->plain().'</button>
+			        <button type="button" class="btn btn-default" data-dismiss="modal">'.wfMessage('cancel')->plain().'</button>
 			      </div>
 			    </div>
 
